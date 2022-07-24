@@ -1,0 +1,31 @@
+{
+    "extends": "@tsconfig/node16-strictest/tsconfig.json",
+    "compilerOptions": {
+        "moduleResolution": "Node",
+        /* Whenever incremental compilation is enabled */
+        "incremental": true,
+        /* File containing saved information about incremental compilation */
+        "tsBuildInfoFile": "app/.build/info.json",
+        /* Whenever sourcemaps should be made for emitted JavaScript files */
+        "sourceMap": true,
+        /* Directrory in which are placed all emitted files */
+        "outDir": "app",
+        /* Whenever comments are emitted to files */
+        "removeComments": true,
+        /* Replace a set of core libraries. */
+        "lib": ["ES2021", "DOM.Iterable"],
+        /* Limit module resolution to project's path only */
+        "typeRoots": ["./node_modules/@types"],
+        /* Use `tslib` for import helpers. */
+        "importHelpers": true,
+        /* Allow for JSON imports */
+        "resolveJsonModule": true,
+        /* Enforce consistent casing for imported module names */
+        "forceConsistentCasingInFileNames": true,
+        /* Use *nix end-of-line character for emitted files */
+        "newLine": "lf"
+    },
+    "include": [
+        "sources/code/**/*.ts"
+    ]
+}
